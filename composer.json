@@ -1,0 +1,41 @@
+{
+    "name": "ascoos/phpBCL",
+    "description": "PHP PEGI (Pan European Game Information (phpPEGI).",
+    "version": "1.0.0",
+    "license":"AGL-F (Ascoos General License - Free)",
+    "homepage": "https://apps.ascoos.com/phpPEGI",
+    "authors": [
+        {
+            "name": "Drogidis Christos",
+            "homepage": "https://www.ascoos.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ascoos/phpPEGI/issues",
+        "source": "https://github.com/ascoos/phpPEGI"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "ascoos/phpPEGI",
+                "version": "1.0.0",
+                "type": "library",
+                "dist": [
+                    {
+                        "url": "https://dl.ascoos.com/pub/phpPEGI/phpPEGI-latest.zip",
+                        "type": "zip"
+                    },
+                    {
+                        "url": "https://github.com/ascoos/phpPEGI/releases/download/1.0.0/phpPEGI-1.0.0.zip",
+                        "type": "zip"
+                    }
+                ]
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    }    
+}
