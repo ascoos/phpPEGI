@@ -14,3 +14,15 @@ The PEGI rating considers the age suitability of a game, not the level of diffic
 
 PEGI is used and recognised throughout Europe and has the enthusiastic support of the European Commission. It is considered as a model of European harmonisation in the field of the protection of children.
 
+
+# USE
+
+1) In the index.php example file, replace the $cms_site variable with the actual address where you will run this package.
+
+```
+$cms_site = '[YOUR REAL SITE PATH -- https://www.example.com/phpPEGI]';
+```
+
+2) In the Data folder, I've created a data.php file that has a table of examples inside.
+In real life, this could be done by creating a database and code that would pull this data.
+
