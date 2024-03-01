@@ -16,7 +16,7 @@
  * @ASCOOS-COPYRIGHT   : Copyright (c) 2007 - 2023, AlexSoft Software.               *
  *************************************************************************************
  *
- * @package            : ASCOOS CMS - phpBCL
+ * @package            : ASCOOS CMS - phpPEGI
  * @subpackage         : phpPEGI Example Index File
  * @source             : /phpPEGI/index.php
  * @version            : 1.0.0
