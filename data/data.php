@@ -18,14 +18,14 @@ $games = [
                 ],
                 'website' => '',
                 'screen' => ''
-            ],
+            ]
         ],
         '7' => [
             0 => [
                 'content' => ['Violence', 'Purchases'],
                 'title' => 'Party Animals',
                 'genre' => 'Brawler, party',
-                'description' => '',
+                'description' => 'Party Animals is a physics-based competitive brawler game where players play as various animals including puppies, kittens, ducks, bunnies, sharks, dinosaurs and even unicorns. Animals can punch, toss, jump, kick, and headbutt each other.',
                 'developer' => 'Recreate Games',
                 'publiser' => 'SOURCE TECHNOLOGY',
                 'platforms' => [
@@ -34,8 +34,8 @@ $games = [
                     'PC' => '22/11/2023'
                 ],
                 'website' => '',
-                'screen' => ''
-            ],
+                'screen' => 'https://en.wikipedia.org/wiki/Party_Animals_(video_game)#/media/File:Party_Animals_cover.jpg'
+            ]
         ],
         '12' => [
             0 => [
@@ -51,7 +51,7 @@ $games = [
                 ],
                 'website' => 'https://www.pm-studios.com/Projects/tevi',
                 'screen' => 'https://static.wixstatic.com/media/572936_f6c35720dd4b4a1a8a82f38a172974a3~mv2.jpg'
-            ],
+            ]
         ],
         '16' => [
             0 => [
@@ -67,22 +67,22 @@ $games = [
                 ],
                 'website' => '',
                 'screen' => ''
-            ],
+            ]
         ],
         '18' => [
             0 => [
                 'content' => ['Bad', 'Violence', 'Gambling'],
                 'title' => 'Fallout New Vegas Ultimate Edition',
                 'genre' => 'Role-playing, Action, Open World',
-                'description' => '',
-                'developer' => '',
-                'publiser' => 'ZeniMax Europe Limited/Bethesda Softworks Europe',
+                'description' => 'It is set in a world that deviated onto an alternate timeline thanks to Atomic Age technology, which eventually led to a global nuclear apocalypse in the year 2077 in an event referred to as "The Great War", caused by a major conflict between the U.S. and China over natural resources.',
+                'developer' => 'Obsidian Entertainment',
+                'publiser' => 'Bethesda Softworks Europe',
                 'platforms' => [
                     'PC' => '29/02/2024'
                 ],
                 'website' => '',
-                'screen' => ''
-            ],
+                'screen' => 'https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg'
+            ]
         ]
     ],
 
