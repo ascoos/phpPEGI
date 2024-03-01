@@ -21,7 +21,7 @@
  * @source             : /phpPEGI/index.php
  * @version            : 1.0.0
  * @created            : 2024-02-29 09:00:00 UTC+3
- * @updated            : 
+ * @updated            : 2024-03-01 11:00:00 UTC+3
  * @author             : Drogidis Christos
  * @authorSite         : www.alexsoft.gr
  */
@@ -30,8 +30,8 @@
 define('ALEXSOFT_RUN_CMS', true);
 
 $cms_path = str_replace('\\', '/', __DIR__);
-//$cms_site = '[YOUR REAL SITE PATH -- https://www.example.com/phpPEGI]';
-$cms_site = 'https://www.test.loc/ASCOOS-CMS/UNIVERSAL-PACKAGES/phpPEGI';
+$cms_site = '[YOUR REAL SITE PATH -- https://www.example.com/phpPEGI]';
+
 
 require_once($cms_path.'/libs/phpPEGI.php');
 require_once($cms_path."/data/data.php");
@@ -39,6 +39,7 @@ require_once($cms_path."/data/data.php");
 
 
 /** 
+ * 
  * Ages = '3', '7', '12', '16', '18'
  * Content = 'Bad', 'Discrimination', 'Drugs', 'Fear', 'Gambling', 'Parental', 'Purchases', 'Sex', 'Violence'
  */ 
@@ -49,23 +50,11 @@ $pegis = [
 
 
 $options = [
-    'img_width' => '50%',   // 
-    'img_height' => '50%',  //
-    'lang' => null          // Read autoread Browser Language
+    'lang' => null          // Auto Read Browser Language
 ];
 
 
-
-$var_nums_games = 2;
-$var_sort_pegi = ['3','7','12','16','18'];
-
-
-
 $objPEGI = new TPEGIHandler($options);
-
-$txt = '';
-$gtxt = '';
-$page = $pegis['age'];
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $objPEGI->getLang(); ?>">
@@ -80,6 +69,7 @@ $page = $pegis['age'];
 <div class="container"> 
     
 <?php 
+$gtxt = '';
 foreach ($games['pegi'] as $pegi_key => $pegi_values) 
 {
     foreach ($pegi_values as $game) 
@@ -94,11 +84,13 @@ foreach ($games['pegi'] as $pegi_key => $pegi_values)
         $gtxt .= '<div class="more-info">';
         $gtxt .= '<h1>'.$game['title'].'</h1>';
         $gtxt .= '<div class="stats">';
-               
-        foreach ($game['content'] as $key => $value)         
+        
+        $txt = '';
+
+        foreach ($game['content'] as $content)         
         {
             $txt .= '<div>';
-            $txt .= '<i><img src="themes/default/images/'.$objPEGI->getImage($value).'" height="68" alt="'.$objPEGI->getTitle($value).'" /></i>';
+            $txt .= '<i><img src="themes/default/images/'.$objPEGI->getImage($content).'" height="68" alt="'.$objPEGI->getTitle($content).'" /></i>';
             $txt .= '</div>';
         }
      
@@ -122,8 +114,7 @@ foreach ($games['pegi'] as $pegi_key => $pegi_values)
 echo $gtxt;
 ?>
 </div>
+</div>
 </body>
 </html>
-<?php
-unset($objPEGI);
-?>
+<?php unset($objPEGI); ?>
