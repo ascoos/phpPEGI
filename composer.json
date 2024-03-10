@@ -1,6 +1,6 @@
 {
-    "name": "ascoos/phpBCL",
-    "description": "PHP PEGI (Pan European Game Information (phpPEGI).",
+    "name": "ascoos/phpPEGI",
+    "description": "PHP PEGI (Pan European Game Information).",
     "version": "1.0.0",
     "license":"AGL-F (Ascoos General License - Free)",
     "homepage": "https://apps.ascoos.com/phpPEGI",
